@@ -27,6 +27,10 @@
 
 | 论文 | 期刊/会议 | 年份 | 论文 | 代码 | 方法分析 |
 |---|---|---:|---|---|---|
+| Pretrain-then-Adapt: Uncertainty-Aware Test-Time Adaptation for Text-based Person Search | SIGIR | 2026 | [ACM DOI](https://doi.org/10.1145/3805712.3809598) | — | 在测试时利用不确定性进行域适配，适合部署到新摄像机/新场景。 |
+| Unifying Granularity and Reliability: A Robust and Efficient Framework for Text-based Person Retrieval | SIGIR | 2026 | [ACM DOI](https://doi.org/10.1145/3805712.3809718) | — | 联合建模不同粒度的文本-图像信息与匹配可靠性。 |
+| An Empirical Study of Validating Synthetic Data for Text-Based Person Retrieval | IEEE Transactions on Information Forensics and Security (TIFS) | 2026 | [IEEE](https://ieeexplore.ieee.org/document/11614570) | — | 系统评估合成数据用于文本行人检索时的有效性和验证方法。 |
+| PaRT-Net: Text-Image Person Re-Identification With Prioritized and Reweighted Tokens | IEEE Transactions on Multimedia (TMM) | 2026 | [IEEE DOI](https://doi.org/10.1109/TMM.2026.3718633) | — | 通过 token 优先级和重加权突出描述中的关键行人属性。 |
 | Tackling Alignment Ambiguity in Person Retrieval through Conversational Attribute Mining | CVPR | 2026 | [CVPR](https://openaccess.thecvf.com/content/CVPR2026/html/Zou_Tackling_Alignment_Ambiguity_in_Person_Retrieval_through_Conversational_Attribute_Mining_CVPR_2026_paper.html) | — | 通过 MLLM 对话挖掘属性，使用 BCM 做 token-level 对齐，并以 CAWL 抑制低质量对话响应。 |
 | Quota-Calibrated Fine-Grained Alignment with Context-Aware Marginals for Text-based Person Retrieval | CVPR | 2026 | [PDF](https://openaccess.thecvf.com/content/CVPR2026/papers/Li_Quota-Calibrated_Fine-Grained_Alignment_with_Context-Aware_Marginals_for_Text-based_Person_Retrieval_CVPR_2026_paper.pdf) | — | 关注细粒度跨模态对齐中的匹配配额和上下文边际分布。 |
 | R2TUA: Reconstruction-residual Based Targeted and Untargeted Attack Against Text-Image Person Re-Identification | CVPR | 2026 | [PDF](https://openaccess.thecvf.com/content/CVPR2026/papers/Wang_R2TUA_Reconstruction-residual_Based_Targeted_and_Untargeted_Attack_Against_Text-Image_Person_CVPR_2026_paper.pdf) | — | 从攻击/鲁棒性角度研究 text-image person re-identification。 |
@@ -72,4 +76,3 @@
 | 几何结构一致性 | Mitigating Noisy Correspondence by Geometrical Structure Consistency Learning, CVPR 2024 | [GSC](https://github.com/MediaBrain-SJTU/GSC) |
 | mismatched pair rematching | Learning to Rematch Mismatched Pairs, CVPR 2024 | [L2RM](https://github.com/hhc1997/L2RM) |
 | 文本行人检索噪声学习 | Noisy-Correspondence Learning for Text-to-Image Person Re-identification, CVPR 2024 | [RDE](https://github.com/QinYang79/RDE) |
-
