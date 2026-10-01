@@ -1,0 +1,122 @@
+[
+  {
+    "title": "Pseudo-Text Guided Robust Learning for Noisy Correspondence in Cross-Modal Retrieval",
+    "venue": "IEEE Transactions on Image Processing",
+    "venue_abbr": "TIP",
+    "year": 2026,
+    "paper_url": "https://ieeexplore.ieee.org/abstract/document/11455609",
+    "code_url": "https://github.com/shidan0122/PTRL",
+    "abstract_zh": "针对跨模态数据中的错误图文配对，PTRL 使用伪文本作为显式监督，先区分 clean/noisy pair，再用伪文本替换噪声文本以保持语义一致性，并通过伪文本-图像对增强数据多样性，最后使用鲁棒 InfoNCE 稳定训练。",
+    "reuse_modules": ["pseudo_text_replacement", "noise_partition", "robust_infonce"]
+  },
+  {
+    "title": "Robust Semi-paired Multimodal Learning for Cross-modal Retrieval",
+    "venue": "Proceedings of the AAAI Conference on Artificial Intelligence, Oral",
+    "venue_abbr": "AAAI",
+    "year": 2026,
+    "paper_url": "https://ojs.aaai.org/index.php/AAAI/article/view/39684",
+    "code_url": "https://github.com/QinYang79/RCSL",
+    "abstract_zh": "研究少量配对图文与大量非配对图文共同训练的 semi-paired learning。SDL 在少量 paired data 上保持跨模态 alignment/uniformity；RCM 从非配对数据构造伪配对，并基于风险最小化抑制伪配对噪声。",
+    "reuse_modules": ["semi_paired_sampler", "pseudo_pair_mining", "risk_minimization"]
+  },
+  {
+    "title": "Noisy Correspondence Learning with Modality Gap Direction Correction",
+    "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+    "venue_abbr": "AAAI",
+    "year": 2026,
+    "paper_url": "https://doi.org/10.1609/aaai.v40i12.37984",
+    "code_url": "https://github.com/wwyq1/MGCS",
+    "abstract_zh": "论文指出图文特征之间存在数据依赖的 sample-level alignment drift，直接套用单模态 small-loss 规则会受到 modality gap 影响。MGCS 动态补偿模态间隙方向，从而更可靠地筛分 noisy correspondence。",
+    "reuse_modules": ["modality_gap_estimator", "drift_corrected_similarity", "clean_noisy_split"]
+  },
+  {
+    "title": "Boosting Noisy Correspondence Discrimination via Dynamic Neighborhood Semantic Verification",
+    "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+    "venue_abbr": "AAAI",
+    "year": 2026,
+    "paper_url": "https://ojs.aaai.org/index.php/AAAI/article/download/39880/43841",
+    "code_url": null,
+    "abstract_zh": "DNS 不仅比较当前图像-文本 pair 的相似度，还利用动态语义邻域验证匹配关系，并使用 semantic drift distance、local relation proximity 以及语义方向/幅值分解提高噪声辨别能力。",
+    "reuse_modules": ["dynamic_neighbors", "semantic_drift", "relation_verifier"]
+  },
+  {
+    "title": "Negative Can Be Positive: A Stable and Noise-Resistant Complementary Contrastive Learning for Cross-Modal Matching",
+    "venue": "Information Fusion",
+    "venue_abbr": "Information Fusion",
+    "year": 2026,
+    "paper_url": "http://home.njustkmg.cn:4056/assets/pdf/publications/Conference%20Papers/GLP.pdf",
+    "code_url": "https://github.com/hxy2969/dcl",
+    "abstract_zh": "该方法不把所有负样本都视为纯粹的反例，而是显式建模潜在正信息，通过 complementary contrastive learning 减少错误负样本对跨模态匹配的破坏。",
+    "reuse_modules": ["complementary_contrastive_loss", "hard_negative_reweighting"]
+  },
+  {
+    "title": "Geometry-Aware Noisy Correspondence Mitigation for Cross-Modal Text-Based Person Retrieval",
+    "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+    "venue_abbr": "AAAI",
+    "year": 2026,
+    "paper_url": "https://ojs.aaai.org/index.php/AAAI/article/view/38218",
+    "code_url": null,
+    "abstract_zh": "GSCA 同时利用跨模态 cosine similarity 和模态内 nearest-neighbor affinity 学习结构一致性；SRAM 将训练样本分为 clean、ambiguous 和 noisy 三类，再有选择地挖掘可靠 pair 与正负样本。",
+    "reuse_modules": ["intra_modal_affinity", "geometry_consistency", "three_way_partition"]
+  },
+  {
+    "title": "KPDM: Key Phrase Dynamic Masking for Robust Text-to-Image Person Retrieval",
+    "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+    "venue_abbr": "AAAI",
+    "year": 2026,
+    "paper_url": "https://ojs.aaai.org/index.php/AAAI/article/view/38199",
+    "code_url": null,
+    "abstract_zh": "KPDM 以 adjective+noun 短语为单位进行动态 masking，配合 frequency-based masked language loss 保护细粒度语义；同时用跨层重要性估计筛选行人图像区域，并以同一身份内的图文相似度分布进行可信划分。",
+    "reuse_modules": ["phrase_masking", "patch_importance", "trusted_partition"]
+  },
+  {
+    "title": "Tackling Alignment Ambiguity in Person Retrieval through Conversational Attribute Mining",
+    "venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+    "venue_abbr": "CVPR",
+    "year": 2026,
+    "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zou_Tackling_Alignment_Ambiguity_in_Person_Retrieval_through_Conversational_Attribute_Mining_CVPR_2026_paper.html",
+    "code_url": null,
+    "abstract_zh": "CECA 使用 MLLM 引导的多轮对话挖掘细粒度行人属性，再通过 Bidirectional Cross-attention Mixer 做 token-level alignment，并用 Confidence-Aware Weighting Loss 降低低质量对话响应的影响。",
+    "reuse_modules": ["attribute_mining", "bidirectional_cross_attention", "confidence_weighting"]
+  },
+  {
+    "title": "Cross-modal Fuzzy Alignment Network for Text-Aerial Person Retrieval and A Large-scale Benchmark",
+    "venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+    "venue_abbr": "CVPR",
+    "year": 2026,
+    "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Deng_Cross-modal_Fuzzy_Alignment_Network_for_Text-Aerial_Person_Retrieval_and_A_CVPR_2026_paper.html",
+    "code_url": "https://github.com/Yifei-AHU/AERI-PEDES",
+    "abstract_zh": "CFAN 用 fuzzy membership 对 token-level association strength 建模，抑制空中视角中不可见或不可靠的文本 token；同时引入 ground-view image 作为 bridge agent，并发布 AERI-PEDES 大规模空中行人检索数据集。",
+    "reuse_modules": ["fuzzy_token_alignment", "ground_view_bridge", "aerial_pedes_loader"]
+  },
+  {
+    "title": "Text-based Aerial-Ground Person Retrieval",
+    "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+    "venue_abbr": "AAAI",
+    "year": 2026,
+    "paper_url": "https://ojs.aaai.org/index.php/AAAI/article/view/40140",
+    "code_url": "https://github.com/Flame-Chasers/TAG-PR",
+    "abstract_zh": "该方向将 text-to-person retrieval 扩展到 aerial-ground 场景，核心问题是 UAV 视角、地面视角和文本描述之间的跨视角域差异。",
+    "reuse_modules": ["aerial_ground_domain_bridge", "cross_view_evaluation"]
+  },
+  {
+    "title": "Generative Retrieval for Unsupervised Text-Based Person Search",
+    "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "venue_abbr": "TPAMI",
+    "year": 2026,
+    "paper_url": "https://ieeexplore.ieee.org/document/11619579",
+    "code_url": null,
+    "abstract_zh": "研究无监督文本行人搜索中的 generative retrieval 范式，重点价值在于减少对人工图文配对标签的依赖。",
+    "reuse_modules": ["unsupervised_retrieval", "generative_indexing"]
+  },
+  {
+    "title": "Spatio-temporal Semantic Alignment Leveraging Human Structural Priors for Text-to-video Person Retrieval",
+    "venue": "Information Sciences",
+    "venue_abbr": "Information Sciences",
+    "year": 2026,
+    "paper_url": "https://www.sciencedirect.com/science/article/pii/S0020025526003452",
+    "code_url": null,
+    "abstract_zh": "将人体结构先验与时空语义对齐引入 text-to-video person retrieval，用于处理视频中姿态、时间和身份信息的变化。",
+    "reuse_modules": ["spatio_temporal_alignment", "human_structure_prior"]
+  }
+]
