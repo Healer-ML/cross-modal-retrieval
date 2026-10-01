@@ -53,6 +53,5 @@
 | Robust Semi-paired Multimodal Learning for Cross-modal Retrieval | 利用少量配对数据和大量非配对数据进行训练；SDL 学习配对语义，RCM 从非配对数据构造并筛选可靠伪配对。 | AAAI 2026 | [Code](https://github.com/QinYang79/RCSL) |
 | Noisy Correspondence Learning with Modality Gap Direction Correction | 建模图像与文本特征之间的数据依赖型 alignment drift，通过 modality-gap corrected similarity 改善 clean/noisy pair 的分离。 | AAAI 2026 | [Code](https://github.com/wwyq1/MGCS) |
 | Negative Can Be Positive: A Stable and Noise-Resistant Complementary Contrastive Learning for Cross-Modal Matching | 不将所有负样本视为纯负样本，显式利用其中潜在的正信息，以 complementary contrastive learning 减少错误负监督。 | Information Fusion 2026 | [Code](https://github.com/hxy2969/dcl) |
-| Tackling Alignment Ambiguity in Person Retrieval through Conversational Attribute Mining | 利用 MLLM 对话挖掘细粒度行人属性，通过双向 cross-attention 进行 token-level 对齐，并用置信度损失抑制低质量响应。 | CVPR 2026 | — |
 | Cross-modal Fuzzy Alignment Network for Text-Aerial Person Retrieval and A Large-scale Benchmark | 通过 fuzzy token alignment 估计文本 token 的视觉可靠性，引入 ground-view image 作为 bridge agent，并构建 AERI-PEDES 数据集。 | CVPR 2026 | [Code](https://github.com/Yifei-AHU/AERI-PEDES) |
 | Text-based Aerial-Ground Person Retrieval | 研究文本描述、地面行人图像和空中行人图像之间的跨视角域差异。 | AAAI 2026 | [Code](https://github.com/Flame-Chasers/TAG-PR) |
