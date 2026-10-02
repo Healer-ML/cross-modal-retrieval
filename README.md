@@ -193,6 +193,16 @@
 | 论文题目 | 摘要（中文释义） | 刊会简称 | 代码 |
 |---|---|---|---|
 | VISTA: Visualized Text Embedding For Universal Multi-Modal Retrieval | 将图像信息转化为可与文本编码器交互的视觉 token，并以合成组合数据和分阶段训练构造通用多模态检索表示。 | ACL | [Code](https://github.com/FlagOpen/FlagEmbedding) |
+| PreFLMR: Scaling Up Fine-Grained Late-Interaction Multi-modal Retrievers | 构建 M2KR 多模态检索训练与评测套件，并以细粒度 late-interaction 检索器支持图文、图文问答等知识型检索任务。 | ACL | [Code](https://github.com/LinWeizheDragon/Retrieval-Augmented-Visual-Question-Answering) |
+| E5-V: Universal Embeddings with Multimodal Large Language Models | 将多模态大语言模型训练为通用嵌入器，通过多任务指令微调和对比学习支持图文及多模态检索。 | arXiv | [Code](https://github.com/kongds/E5-V) |
+| MM-Embed: Universal Multimodal Retrieval with Multimodal LLMs | 基于多模态大语言模型构建统一检索嵌入，并用困难负例挖掘提升跨模态及多模态检索能力。 | arXiv | [Code](https://huggingface.co/nvidia/MM-Embed) |
+| INQUIRE: A Benchmark for Expert-Level Image Retrieval | 构建面向科学专家的文本搜图基准和大规模相关性标注，评估模型在专业、知识密集型图像检索中的能力。 | NeurIPS D&B | [Code](https://github.com/inquire-benchmark/INQUIRE) |
+
+### 多模态文档检索
+
+| 论文题目 | 摘要（中文释义） | 刊会简称 | 代码 |
+|---|---|---|---|
+| Unifying Multimodal Retrieval via Document Screenshot Embedding | 将文档页面截图直接编码为稠密向量，保留页面中的文字、图像和布局信息，避免解析/OCR流程造成的信息损失。 | EMNLP | [Code](https://github.com/texttron/tevatron/tree/main/examples/dse) |
 
 ### 视频文本检索
 
@@ -200,6 +210,22 @@
 |---|---|---|---|
 | Holistic Features are almost Sufficient for Text-to-Video Retrieval | 通过教师模型蒸馏把多粒度视频—文本知识迁移到整体特征中，以更低的交互成本执行文本搜视频。 | CVPR | [Code](https://github.com/ruc-aimc-lab/TeachCLIP) |
 | MV-Adapter: Multimodal Video Transfer Learning for Video Text Retrieval | 在预训练 CLIP 中插入时序适配器，并结合跨模态信息传递，将图像—文本预训练高效迁移到视频文本检索。 | CVPR | [Code](https://github.com/zhangbw17/MV-Adapter) |
+| DGL: Dynamic Global-Local Prompt Tuning for Text-Video Retrieval | 动态调整全局与局部提示，联合捕获视频整体语义和片段细节，以适配文本—视频跨模态检索。 | AAAI | [Code](https://github.com/knightyxp/DGL) |
+| M2-RAAP: A Multi-Modal Recipe for Advancing Adaptation-based Pre-training towards Effective and Efficient Zero-shot Video-text Retrieval | 通过多模态适配式预训练配方提升零样本文本—视频检索效果，并兼顾参数与推理效率。 | SIGIR | [Code](https://github.com/alipay/Ant-Multi-Modal-Framework/tree/main/prj/M2_RAAP) |
+| MPT: Multi-grained Prompt Tuning for Text-Video Retrieval | 在多个语义粒度上学习可训练提示，增强文本与视频整体及局部内容之间的匹配。 | ACM MM | [Code](https://github.com/zchoi/MPT) |
+| UMP: Unified Modality-aware Prompt Tuning for Text-Video Retrieval | 以统一且具模态感知能力的提示适配视觉和语言特征，减少模态差异并提升视频文本检索。 | TCSVT | [Code](https://github.com/zchoi/UMP_TVR) |
+| Composed Video Retrieval via Enriched Context and Discriminative Embeddings | 将文本修改上下文融入参考视频表示，并学习判别性嵌入以检索符合组合意图的目标视频。 | CVPR | [Code](https://github.com/OmkarThawakar/composed-video-retrieval) |
+| Reversed in Time: A Novel Temporal-Emphasized Benchmark for Cross-Modal Video-Text Retrieval | 提出强调时间顺序理解的视频—文本检索基准，评测模型区分时间反转语义的能力并提供相应方法。 | ACM MM | [Code](https://github.com/qyr0403/Reversed-in-Time) |
+| WAVER: Writing-Style Agnostic Text-Video Retrieval via Distilling Vision-Language Models through Open-Vocabulary Knowledge | 通过开放词汇视觉语言教师向视频检索学生蒸馏知识，减轻描述写作风格和标注视角差异造成的检索偏差。 | ICASSP | [Code](https://github.com/Fsoft-AIC/WAVER) |
+
+### 部分相关视频文本检索
+
+| 论文题目 | 摘要（中文释义） | 刊会简称 | 代码 |
+|---|---|---|---|
+| GMMFormer: Gaussian-Mixture-Model Based Transformer for Efficient Partially Relevant Video Retrieval | 以高斯混合模型表示文本查询与视频片段的相关性分布，并通过 Transformer 高效定位部分相关内容。 | AAAI | [Code](https://github.com/huangmozhi9527/GMMFormer) |
+| GMMFormer v2: An Uncertainty-aware Framework for Partially Relevant Video Retrieval | 在部分相关视频检索中显式建模相关性不确定性，以更稳健地聚合相关片段并抑制无关内容。 | arXiv | [Code](https://github.com/huangmozhi9527/GMMFormer_v2) |
+| PREM: Improving Video Corpus Moment Retrieval with Partial Relevance Enhancement | 面向视频语料库时刻检索利用部分相关监督，增强文本查询与相关视频片段的定位和排序。 | ICMR | [Code](https://github.com/hdy007007/PREM) |
+| BGM-Net: Exploiting Instance-level Relationships in Weakly Supervised Text-to-Video Retrieval | 在弱监督文本搜视频中利用实例级关系传播跨样本信息，缓解视频—文本对应标签不足。 | TOMM | [Code](https://github.com/xjtupanda/BGM-Net) |
 
 ### 跨模态哈希检索
 
@@ -281,22 +307,58 @@
 |---|---|---|---|
 | GENIUS: A Generative Framework for Universal Multimodal Search | 将图像和文本编码为模态解耦的离散语义 ID，再由生成式解码器预测目标 ID，统一多种模态检索。 | CVPR | [Code](https://github.com/sung-yeon-kim/GENIUS-CVPR25) |
 | MegaPairs: Massive Data Synthesis for Universal Multimodal Retrieval | 自动合成大规模异构多模态检索样本并训练检索模型，扩展通用检索任务覆盖范围。 | ACL | [Code](https://github.com/VectorSpaceLab/MegaPairs) |
+| A Combination-based Framework for Generative Text-Image Retrieval: Dual Identifiers and Hybrid Retrieval Strategies | 以顺序与集合式双重图像标识训练生成检索器，并结合稠密重排，在生成式文本搜图中兼顾效率与排序质量。 | SIGIR-AP | [Code](https://github.com/KaipengLi/ComGTIR) |
 | VLM2Vec: Training Vision-Language Models for Massive Multimodal Embedding Tasks | 提出 MMEB 基准并用指令化对比训练将视觉语言模型转为通用嵌入器，统一处理图像、文本组合及多种多模态检索任务。 | ICLR | [Code](https://github.com/TIGER-AI-Lab/VLM2Vec) |
 | mmE5: Improving Multimodal Multilingual Embeddings via High-quality Synthetic Data | 通过高质量合成多语言图文数据训练多模态嵌入模型，改善跨语言语义匹配与图文检索。 | arXiv | [Code](https://github.com/haon-chen/mmE5) |
+| Bridging Modalities: Improving Universal Multimodal Retrieval by Multimodal Large Language Models | 以多模态大语言模型生成与组织跨模态监督，训练通用多模态嵌入器，覆盖图像、视频及视觉文档检索。 | CVPR | [Code](https://huggingface.co/Alibaba-NLP/gme-Qwen2-VL-2B-Instruct) |
 
 ### 多模态文档检索
 
 | 论文题目 | 摘要（中文释义） | 刊会简称 | 代码 |
 |---|---|---|---|
+| ColPali: Efficient Document Retrieval with Vision Language Models | 直接将文档页面图像编码为多向量表示并用 late interaction 匹配，跳过繁琐文本抽取，同时发布 ViDoRe 视觉文档检索基准。 | ICLR | [Code](https://github.com/illuin-tech/colpali) |
 | Recurrence-Enhanced Vision-and-Language Transformers for Robust Multimodal Document Retrieval | 以循环融合单元逐层整合文档中的图像与文本，并利用查询和文档的多层表示开展多模态文档检索。 | CVPR | [Code](https://github.com/aimagelab/ReT) |
 | Zero-shot Multimodal Document Retrieval via Cross-Modal Question Generation | 用多模态大模型为文档生成跨模态预问题，再以问题语义建立索引，实现免任务训练的文档检索。 | EMNLP | [Code](https://github.com/yejinc00/PREMIR) |
 | PUMA: Layer-Pruned Language Model for Efficient Unified Multimodal Retrieval with Modality-Adaptive Learning | 通过层剪枝、自蒸馏和模态自适应对比学习构造更高效的统一多模态检索器。 | ACM MM | [Code](https://github.com/iLearn-Lab/ACM-MM25-PUMA) |
+| ViDoRAG: Visual Document Retrieval-Augmented Generation via Dynamic Iterative Reasoning Agents | 构建视觉文档检索与推理基准，并以混合多模态检索和探索、总结、反思式多代理流程处理复杂文档问题。 | EMNLP | [Code](https://github.com/Alibaba-NLP/ViDoRAG) |
 
 ### 视频文本检索
 
 | 论文题目 | 摘要（中文释义） | 刊会简称 | 代码 |
 |---|---|---|---|
 | DiscoVLA: Discrepancy Reduction in Vision, Language, and Alignment for Parameter-Efficient Video-Text Retrieval | 同时缩小视觉、语言和对齐三类图像到视频迁移差异，以伪图像描述和图像—视频蒸馏提升参数高效检索。 | CVPR | [Code](https://github.com/LunarShen/DsicoVLA) |
+| Learning Audio-Guided Video Representation with Gated Attention for Video-Text Retrieval | 以门控注意力筛除无关音频并融合有用声学线索，同时采用自适应间隔对比损失改善视频—文本对齐。 | CVPR | [Code](https://github.com/BoseungJeong/AVIGATE-CVPR2025) |
+| Narrating the Video: Boosting Text-Video Retrieval via Comprehensive Utilization of Frame-Level Captions | 利用帧级生成描述增强视频特征，以查询感知过滤去除错误叙述，并联合视频与叙述相似度进行检索。 | CVPR | [Code](https://github.com/invhun/NarVid) |
+| TempMe: Video Temporal Token Merging for Efficient Text-Video Retrieval | 合并冗余视频时序 token，在保留检索相关信息的同时降低视频编码开销。 | ICLR | [Code](https://github.com/LunarShen/TempMe) |
+| Learning Fine-Grained Representations through Textual Token Disentanglement in Composed Video Retrieval | 解耦文本 token 的不同语义作用并学习细粒度组合表示，以更好匹配参考视频、修改描述与目标视频。 | ICLR | [Code](https://github.com/May2333/FDCA) |
+| Bidirectional Likelihood Estimation with Multi-Modal Large Language Models for Text-Video Retrieval | 利用多模态大语言模型进行双向似然估计，从视频生成文本和由文本匹配视频，增强跨模态相关性判断。 | ICCV | [Code](https://github.com/mvlab/BLiM) |
+| T2VParser: Adaptive Decomposition Tokens for Partial Alignment in Text to Video Retrieval | 引入自适应分解 token，将句子和视频拆为可局部匹配的语义单元，以应对跨模态部分对齐。 | ACM MM | [Code](https://github.com/Lilidamowang/T2VParser) |
+| HUD: Hierarchical Uncertainty-Aware Disambiguation Network for Composed Video Retrieval | 通过层次化不确定性估计消解组合视频查询歧义，逐步对齐修改意图与视频内容。 | ACM MM | [Code](https://github.com/iLearn-Lab/MM25-HUD) |
+| HOVER: Hyperbolic Video-Text Retrieval | 在双曲空间组织视频与文本的层次语义关系，以更适合层级数据的几何表示执行跨模态检索。 | TIP | [Code](https://github.com/shi-rq/HOVER) |
+| Text-Video Retrieval with Global-Local Semantic Consistent Learning | 联合约束全局和局部语义的一致性，增强视频片段与文本细节之间的互补对齐。 | TIP | [Code](https://github.com/zchoi/GLSCL) |
+| Beyond Simple Edits: Composed Video Retrieval with Dense Modifications | 构建包含密集、多属性修改的组合视频检索任务与数据，并学习对复杂文本编辑敏感的检索表示。 | ICCV | [Code](https://github.com/OmkarThawakar/BSE-CoVR) |
+| Q2E: Query-to-Event Decomposition for Zero-Shot Multilingual Text-to-Video Retrieval | 将多语言查询分解为事件级语义单元，借助跨语言对齐实现零样本文本—视频检索。 | IJCNLP-AACL | [Code](https://github.com/dipta007/Q2E) |
+| Quantifying and Narrowing the Unknown: Interactive Text-to-Video Retrieval via Uncertainty Minimization | 通过不确定性量化识别查询中的未知信息，并以交互式反馈逐步缩小候选视频范围。 | ICCV | [Code](https://github.com/bingqingzhang/umivr) |
+
+### 视频时刻检索
+
+| 论文题目 | 摘要（中文释义） | 刊会简称 | 代码 |
+|---|---|---|---|
+| RefCap: Zero-shot Video Corpus Moment Retrieval Based on Refined Dense Video Captioning | 先生成并细化视频中的密集事件描述，再根据文本相似度从大规模视频语料检索相关时刻，实现零样本视频时刻检索。 | ICASSP | [Code](https://github.com/BUAAPY/RefCap) |
+
+### 部分相关视频文本检索
+
+| 论文题目 | 摘要（中文释义） | 刊会简称 | 代码 |
+|---|---|---|---|
+| Enhancing Partially Relevant Video Retrieval with Hyperbolic Learning | 以双曲空间刻画部分相关视频片段的层次语义，并改善文本查询与多片段相关性的匹配。 | ICCV | [Code](https://github.com/lijun2005/ICCV25-HLFormer) |
+| Mitigating Semantic Collapse in Partially Relevant Video Retrieval | 分析部分相关视频检索中的语义坍塌现象，并通过结构化约束维持相关与非相关片段的区分。 | NeurIPS | [Code](https://github.com/admins97/MSC_PRVR) |
+| ARL: Ambiguity-Restrained Text-Video Representation Learning for Partially Relevant Video Retrieval | 约束查询歧义带来的表示偏移，学习更可靠的文本—视频部分相关性表示。 | AAAI | [Code](https://github.com/gersys/ARL) |
+| Towards Efficient Partially Relevant Video Retrieval with Active Moment Discovering | 主动发现与查询相关的视频时刻，避免对整段视频进行冗余计算以提升部分相关检索效率。 | TMM | [Code](https://github.com/songpipi/AMDNet) |
+| Enhancing Partially Relevant Video Retrieval with Robust Alignment Learning | 以鲁棒对齐学习处理文本与局部视频片段之间的不完整或有噪对应，提升部分相关检索。 | EMNLP Findings | [Code](https://github.com/zhanglong-ustc/RAL-PRVR) |
+| ProPy: Building Interactive Prompt Pyramids upon CLIP for Partially Relevant Video Retrieval | 在 CLIP 上构造交互式多层提示金字塔，以不同语义粒度定位部分相关视频内容。 | EMNLP Findings | [Code](https://github.com/BUAAPY/ProPy) |
+| UEM: Uneven Event Modeling for Partially Relevant Video Retrieval | 建模视频中持续时间和语义密度不均的事件片段，提升文本查询对部分相关内容的定位能力。 | ICME | [Code](https://github.com/Sasa77777779/UEM) |
+| MamFusion: Multi-Mamba with Temporal Fusion for Partially Relevant Video Retrieval | 结合多路 Mamba 序列建模与时序融合，捕获长视频中的局部事件及其文本相关性。 | ICME | [Code](https://github.com/Vision-Multimodal-Lab-HZCU/MamFusion) |
+| Dual Learning with Dynamic Knowledge Distillation and Soft Alignment for Partially Relevant Video Retrieval | 通过双向学习、动态知识蒸馏和软对齐，兼顾全局匹配与局部相关片段检索。 | arXiv | [Code](https://github.com/HuiGuanLab/DL-DKD) |
 
 ### 实例级图像检索
 
@@ -338,6 +400,7 @@
 | Reason-before-Retrieve: One-Stage Reflective Chain-of-Thoughts for Training-Free Zero-Shot Composed Image Retrieval | 在检索阶段显式推理参考图像和修改文本的组合意图，免除任务专属训练。 | CVPR | [Code](https://github.com/Pter61/osrcir) |
 | Generative Zero-Shot Composed Image Retrieval | 先依据图像和修改文本生成组合目标的代理图像，再用代理图像执行零样本检索。 | CVPR | [Code](https://github.com/lan-lw/ComposedImageGen) |
 | Slot Inversion for Asymmetric Composed Image Retrieval | 通过槽位反演建模参考图像与修改文本的非对称贡献，适配两种模态作用不均的组合检索。 | ICME | [Code](https://github.com/JThuge/Slot4ACir) |
+| Fine-Grained Zero-Shot Composed Image Retrieval with Complementary Visual-Semantic Integration | 组合参考图像的伪 token、修改文本、候选新增物体及生成描述，整合互补视觉与语义证据完成零样本检索。 | ICDM | [Code](https://github.com/yyc6631/CVSI) |
 
 ### 文本行人与组合行人检索
 
@@ -359,6 +422,8 @@
 | Fine-Grained Visual-Language Alignment for Remote Sensing Image–Text Retrieval | 结合粗粒度对比目标与细粒度空间掩码损失，对齐遥感图像 patch 和文本实体。 | TGRS | [Code](https://github.com/Ji-Haoyang/FGVLA) |
 | MSSA: A Multi-Scale Semantic-Aware Method for Remote Sensing Image–Text Retrieval | 通过双分支编码、语义感知交互和多尺度融合建模遥感目标与描述词的对应关系。 | Remote Sens. | [Code](https://github.com/LiaoYun0x0/MSSA) |
 | A Resource-Efficient Training Framework for Remote Sensing Text-Image Retrieval | 以资源高效训练策略降低遥感图文检索的训练负担，并在公开遥感图文基准上评测。 | arXiv | [Code](https://github.com/ZhangWeihang99/CMER) |
+| ReCoTR: Reducing Semantic Cognitive Shift via Dual-Consensus Token Compression for Remote Sensing Image-Text Retrieval | 以跨模态语义共识和模态内结构一致性评估视觉 token，再压缩低置信背景信息，缓解遥感图文检索中的语义漂移和噪声。 | TIP | [Code](https://github.com/Jerry710/ReCoTR) |
+| Multi-Perspective Subimage CLIP with Keyword Guidance for Remote Sensing Image-Text Retrieval | 用关键词引导生成遥感子视角图像，并以轻量适配器聚合多视角局部线索，提升细粒度遥感图文对齐。 | ICME | [Code](https://github.com/Lcrucial1f/MPS-CLIP) |
 
 ## 2026
 
@@ -395,6 +460,11 @@
 | Modality and Task Adaptation for Enhanced Zero-shot Composed Image Retrieval | 通过模态与任务适配增强预训练模型对组合查询的理解，在零样本条件下执行组合检索。 | AAAI | [Code](https://github.com/JThuge/MoTa-Adapter) |
 | Self-guided Semantic Inspection for Zero-Shot Composed Image Retrieval | 在训练中主动构造图文语义差异，再自适应组合两种模态，以缩小零样本检索的训练-推理差异。 | CVPR | [Code](https://github.com/Orange1999/DiffComp) |
 | G-MIXER: Geodesic Mixup-based Implicit Semantic Expansion and Explicit Semantic Re-ranking for Zero-Shot Composed Image Retrieval | 沿球面测地线扩展隐式组合语义，并用显式文本语义重排候选，兼顾零样本检索多样性与准确度。 | CVPR | [Code](https://github.com/maya0395/gmixer) |
+| Duplex Rewards Optimization for Test-Time Composed Image Retrieval | 提出测试时组合检索设定，以反事实多项采样扩展候选奖励，并通过双重奖励建模稳定适配无标注查询。 | AAAI | [Code](https://github.com/HaoliangZhou/TT-RLDR) |
+| HINT: Composed Image Retrieval with Dual-Path Compositional Contextualized Network | 通过双路上下文编码建模组合查询中的隐式依赖，并放大匹配与非匹配候选间的相似度差异。 | ICASSP | [Code](https://github.com/zh-mingyu/HINT) |
+| MELT: Improve Composed Image Retrieval via the Modification Frequentation-Rarity Balance Network | 以稀有语义增强模块突出低频修改意图，并用扩散式相似度去噪减少困难负例导致的排序干扰。 | ICASSP | [Code](https://github.com/luckylittlezhi/MELT) |
+| Training-Free Pseudo-Fusion for Composed Image Retrieval with Diffusion Models and Multimodal Large Language Models | 以扩散模型和多模态大语言模型将组合检索改写为单模态检索问题，无需训练专用跨模态融合网络。 | TMLR | [Code](https://github.com/StevenXuf/PeFuse4CIR) |
+| Rethinking Composed Image Retrieval Evaluation: A Fine-Grained Benchmark from Image Editing | 通过可控图像编辑构建覆盖五大类、十五子类的细粒度组合检索基准，揭示现有评测集和嵌入模型的能力缺口。 | ACL | [Code](https://github.com/SighingSnow/edir) |
 
 ### 文本行人检索
 
@@ -413,6 +483,7 @@
 |---|---|---|---|
 | Towards Discriminative and Consistent Cross-Modal Alignment for Remote Sensing Image–Text Retrieval | 结合判别性表示与一致性约束改善遥感影像和文本对齐，支持遥感图文双向检索。 | Remote Sens. | [Code](https://github.com/ADMIS-TONGJI/DCCA) |
 | Robust Remote Sensing Image–Text Retrieval with Noisy Correspondence | 联合建模局部对应和样本关系，在多种噪声配对比例下提升遥感图文检索稳健性。 | CVPR | [Code](https://github.com/MSFLabX/RRSITR) |
+| DFPR: Dynamic Fine-Grained Perceptive Bidirectional Image-Text Retrieval | 以实体、属性、关系和量词专家解析文本，并结合谱图滤波和双向校准提升遥感图文细粒度检索。 | ACM MM | [Code](https://github.com/24029100313/DFPR-Dynamic-Fine-Grained-Perceptive-Bidirectional-Image-Text-Retrieval) |
 
 ### 通用多模态与文档检索
 
@@ -422,12 +493,68 @@
 | RMIR: A Benchmark Dataset for Reasoning-Intensive Multimodal Image Retrieval | 构建强调功能、时间和因果推理的多模态图像检索基准，用于衡量模型超越表面相似度的检索能力。 | CVPR | [Code](https://github.com/amazon-science/rmir) |
 | ReMatch: Boosting Representation through Matching for Multimodal Retrieval | 将生成式匹配目标作为辅助训练信号，并学习多向量表示以增强多模态检索特征的判别性。 | CVPR | [Code](https://github.com/FireRedTeam/ReMatch) |
 | CMDR: Contextual Multimodal Document Retrieval | 建立多页文档检索任务，使模型利用跨页上下文和间接语义关联定位相关页面，而不局限于单页相似度。 | ECCV | [Code](https://github.com/nttmdlab-nlp/CMDR-Bench) |
+| VIRTUE: Visual-Interactive Text-Image Universal Embedder | 通过视觉—文本交互构造统一嵌入空间，并以多阶段训练支持文本搜图、图搜图及组合图像检索。 | ICLR | [Code](https://github.com/sony/virtue) |
+| U-MARVEL: Unveiling Key Factors for Universal Multimodal Retrieval via Embedding Learning with MLLMs | 系统分析多模态大语言模型嵌入式检索的关键因素，并通过针对性训练增强通用图文及多模态检索。 | ICLR | [Code](https://github.com/chaxjli/U-MARVEL) |
+| VLM2Vec-V2: Advancing Multimodal Embedding for Videos, Images, and Visual Documents | 将视觉语言模型扩展为统一视频、图像和视觉文档嵌入器，并以多任务基准和指令化训练提升跨模态检索能力。 | TMLR | [Code](https://github.com/TIGER-AI-Lab/VLM2Vec) |
+| UME-R1: Exploring Reasoning-Driven Generative Multimodal Embeddings | 先以监督微调赋予模型多模态推理与生成式嵌入能力，再通过强化学习进一步优化检索表示和推理质量。 | ICLR | [Code](https://github.com/XMUDeepLIT/UME-R1) |
+| ObjEmbed: Towards Universal Multimodal Object Embeddings | 将图像编码为对象区域级及全局嵌入，并结合对象语义相似度和定位质量支持局部、全局图像检索。 | ICML | [Code](https://github.com/WeChatCV/ObjEmbed) |
+| Recurrence Meets Transformers for Universal Multimodal Retrieval | 将递归式跨模态融合融入视觉语言 Transformer，形成多层级表示以支持统一多模态检索。 | TPAMI | [Code](https://github.com/aimagelab/ReT-2) |
+| ModernVBERT: Towards Smaller Visual Document Retrievers | 以紧凑视觉语言编码器直接理解文档页面，探索更小、更高效的视觉文档检索模型。 | ICML | [Code](https://github.com/illuin-tech/modernvbert) |
+| Guided Query Refinement: Multimodal Hybrid Retrieval with Test-Time Optimization | 在测试时迭代优化多模态查询，并结合稠密与稀疏检索信号提升混合检索的相关性。 | ICLR | [Code](https://github.com/IBM/test-time-hybrid-retrieval) |
+| Bottleneck Tokens for Unified Multimodal Retrieval | 以少量瓶颈 token 压缩并汇聚多模态输入信息，构建更高效的统一检索表示。 | arXiv | [Code](https://github.com/siryuson/BottleneckTokens) |
+| Inference-Free Multimodal Learned Sparse Retrieval for Production-Scale Visual Document Search | 将视觉文档转化为可索引的稀疏表示，免去在线多模态模型推理，面向大规模文档搜索降低服务成本。 | arXiv | [Code](https://github.com/naver/v-splade) |
+| UniversalRAG: Retrieval-Augmented Generation over Corpora of Diverse Modalities and Granularities | 通过模态感知路由在不同模态和粒度的语料间选择检索源，构建适用于异构多模态语料的检索增强生成流程。 | ACL | [Code](https://github.com/wgcyeo/UniversalRAG) |
+| MoCa: Modality-aware Continual Pre-training Makes Better Bidirectional Multimodal Embeddings | 以跨文本—图像联合重建开展模态感知持续预训练，再用异构对比微调扩展训练目标，学习双向通用多模态检索嵌入。 | ACL | [Code](https://github.com/haon-chen/MoCa) |
+| VisRet: Visualization Improves Knowledge-Intensive Text-to-Image Retrieval | 先将文本查询生成到图像模态，再进行图像内检索，以绕过跨模态嵌入对姿态、视角等细微视觉关系刻画不足的问题。 | ACL | [Code](https://github.com/xiaowu0162/Visualize-then-Retrieve) |
+| MM-BRIGHT: A Multi-Task Multimodal Benchmark for Reasoning-Intensive Retrieval | 构建覆盖 29 个领域、四类检索方向的多模态推理基准，系统评估文本、图像及组合查询检索技术文档的能力。 | arXiv | [Code](https://github.com/mm-bright/MM-BRIGHT) |
+| BRIDGE: Multimodal-to-Text Retrieval via Reinforcement-Learned Query Alignment | 以强化学习将图像—文本混合查询改写为面向检索的文本，再用推理增强的稠密检索器查找相关文档。 | arXiv | [Code](https://github.com/mm-bright/multimodal-reasoning-retrieval) |
+| MARVEL: Multimodal Adaptive Reasoning-intensive Expand-rerank and Retrieval | 通过多模态查询扩展、召回与重排组成统一流程，改善复杂视觉问题到文本语料的推理型检索。 | arXiv | [Code](https://github.com/mm-bright/multimodal-reasoning-retrieval) |
+| VISA-Agent: A Visual Symbolic Agent for Reasoning-Intensive Multimodal Retrieval | 将查询图像解析为结构化符号文本，与原始问题及图像描述形成多路文本查询，再融合检索结果完成多模态搜文档。 | Mathematics | [Code](https://github.com/HarnessLab/VISA-Agent) |
+| Multi-Constraint Relational Semantic Alignment Towards Image-Text Retrieval | 以贝叶斯后验约束、动量质心更新和动态尺度适配分别加强细粒度对应、模态一致性及多粒度图文对齐。 | TMM | [Code](https://github.com/xiaoyiseu/McRSA) |
 
 ### 视频文本检索
 
 | 论文题目 | 摘要（中文释义） | 刊会简称 | 代码 |
 |---|---|---|---|
 | EagleNet: Energy-Aware Fine-Grained Relationship Learning Network for Text-Video Retrieval | 构建文本—帧关系图并建模帧间上下文，以能量感知匹配和 sigmoid 对比目标提升视频文本细粒度检索。 | CVPR | [Code](https://github.com/draym28/EagleNet) |
+| Robust Test-time Video-Text Retrieval: Benchmarking and Adapting for Query Shifts | 建立查询分布变化下的视频—文本检索评测，并在测试时自适应更新模型以增强分布外鲁棒性。 | ICLR | [Code](https://github.com/bingqingzhang/vtr_tta) |
+| TAME: Temporal-Aware Mixture-of-Experts for Text-Video Retrieval | 采用时间感知专家混合结构建模不同视频片段与文本的匹配，提升跨模态视频检索表现。 | IEEE Access | [Code](https://github.com/sejong-rcv/TAME) |
+| Adaptive Multi-Agent Reasoning for Text-to-Video Retrieval | 按查询需求动态编排检索、时序推理与查询改写代理，并利用检索反馈和历史推理轨迹协调复杂视频查询。 | ICMR | [Code](https://github.com/nikkiwoo-gh/multi-agent-retrieval) |
+| Dual-Attention Video Representation Learning for Parameter Efficient Text-Video Retrieval | 以双重注意力学习视频全局与局部时序表征，并在较少可训练参数下完成图像预训练模型向文本—视频检索的迁移。 | TMM | [Code](https://github.com/bzy-source/DAVRL) |
+| SAVE: Speech-Aware Video Representation Learning for Video-Text Retrieval | 增设语音语义分支，并以软跨模态对齐融合语音、音频和视觉线索，弥补常规视频文本检索忽略音轨的问题。 | CVPR | [Code](https://github.com/ruc-aimc-lab/SAVE) |
+| PE2LR: Probabilistic Embeddings With Evidence Learning and Refinement for Text-Video Retrieval | 将视频和文本嵌入建模为概率分布，以证据理论估计匹配不确定性，并通过分布级表征学习和嵌入细化增强跨模态一致性。 | TIP | [Code](https://github.com/rzheng77/PE2LR-text-video-retrieval) |
+| Adapting MLLMs for Nuanced Video Retrieval | 仅用文本困难负例对多模态大模型进行对比微调，使统一嵌入处理时间顺序、否定语义及视频加文本编辑等细粒度检索。 | ECCV | [Code](https://github.com/bpiyush/TARA) |
+
+### 持续文本视频检索
+
+| 论文题目 | 摘要（中文释义） | 刊会简称 | 代码 |
+|---|---|---|---|
+| StructAlign: Structured Cross-Modal Alignment for Continual Text-to-Video Retrieval | 以类别级 ETF 几何先验对齐文本和视频，并通过跨模态关系保持抑制持续学习中的模态漂移与灾难性遗忘。 | SIGIR | [Code](https://github.com/Mysteriousplayer/SIGIR26-StructAlign) |
+
+### 组合视频检索
+
+| 论文题目 | 摘要（中文释义） | 刊会简称 | 代码 |
+|---|---|---|---|
+| ReTrack: Evidence-Driven Dual-Stream Directional Anchor Calibration Network for Composed Video Retrieval | 通过双流方向性锚点校准整合参考视频、文本修改与检索证据，改善组合视频查询的目标定位。 | AAAI | [Code](https://github.com/iLearn-Lab/AAAI26-ReTrack) |
+| RELATE: Enhance Composed Video Retrieval via Minimal-Redundancy Hierarchical Collaboration | 解析修改文本的层次结构并稀疏化视频时序特征，减少冗余帧干扰，同时支持组合视频和图像检索。 | ICASSP | [Code](https://github.com/iLearn-Lab/ICASSP26-RELATE) |
+| COVA: Text-guided Composed Video Retrieval for Audio-Visual Content | 将文本引导的组合视频检索扩展到音视频内容，结合视听线索与修改指令检索目标视频。 | ICASSP | [Code](https://github.com/PerceptualAI-Lab/CoVA) |
+
+### 视频时刻检索
+
+| 论文题目 | 摘要（中文释义） | 刊会简称 | 代码 |
+|---|---|---|---|
+| Beyond Caption-Based Queries in Video Moment Retrieval | 构建更接近真实搜索表达的时刻检索基准，并通过抑制解码器查询坍塌改善欠描述、多时刻查询下的定位泛化。 | CVPR | [Code](https://github.com/davidpujol/Beyond_Caption-Based_Queries_for_Video_Moment_Retrieval) |
+
+### 部分相关视频文本检索
+
+| 论文题目 | 摘要（中文释义） | 刊会简称 | 代码 |
+|---|---|---|---|
+| Revisiting Uncertainty: On Evidential Learning for Partially Relevant Video Retrieval | 以证据学习估计视频片段相关性的不确定性，降低不确定匹配对部分相关视频检索的干扰。 | ICML | [Code](https://github.com/lijun2005/ICML26-Holmes) |
+| Imagine Before Concentration: Diffusion-Guided Registers Enhance Partially Relevant Video Retrieval | 借助扩散引导的寄存器特征增强视频表示，使模型更准确聚焦查询相关片段。 | CVPR | [Code](https://github.com/lijun2005/CVPR26-DreamPRVR) |
+| Bidirectional Cross-Modal Collaborative Alignment via Semantic-Guided Visual Embeddings for Partially Relevant Video Retrieval | 以语义引导视觉嵌入开展双向跨模态协同对齐，强化文本与部分相关视频片段之间的匹配。 | TIP | [Code](https://github.com/cyanlll/BOA) |
+| Intrinsic Temporal Adaptation of CLIP for Partially Relevant Video Retrieval | 在 CLIP 表示中引入内在时序适配，使模型能够从整段视频中提取与文本查询相关的局部事件。 | EMNLP | [Code](https://github.com/hynnsk/ITA) |
+| A3PRVR: Action-and-object Aware Alignment for Partially Relevant Video Retrieval | 联合动作与物体语义对齐文本查询和视频片段，以更准确检索部分相关视频。 | AAAI | [Code](https://github.com/chuanshen-chen/A3PRVR) |
+| CaptAin: Caption-driven Alignment for Bridging Modality Gaps in Partially Relevant Video Retrieval | 利用视频字幕作为桥接线索弥合文本与视觉表征差距，增强局部相关片段的跨模态对齐。 | CVPR Findings | [Code](https://github.com/sYYmmEtra/CaptAin-PRVR) |
 
 ### 跨模态哈希检索
 
